@@ -54,18 +54,12 @@ app.get("/", function(req, res) {
   });
 
   app.post("/" , function(req,res){
-      var data = req.body;
-      console.log(data);
-      connection.query("INSERT INTO burgers (burger_name) VALUES (?) "[data] , function (error,data){})
+
   })
 
 
   app.delete("/", function(req,res){
-      var id = req.params.id;
-      connection.query("delete from burgers where id =?" [id], function(error,data){
-          if(error) throw error;
-          res.json(data);
-      })
+ 
   })
 //
 
