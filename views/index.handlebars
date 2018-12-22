@@ -1,36 +1,36 @@
 
-<h1>Add Burger</h1>
 
-
-
+<div class="container-fluid">
+<img src="./assests/burger.jpg " class="rounded mx-auto d-block" alt="...">
+<h1>Eat da burger
+</h1>
 <ul>
   {{#each results }}
   {{#unless devoured}}
-
-
-
-  <li>
+  <p>
     <form action ="/eatburger" method="POST">
     <input type="hidden" name="id" value="{{id}}">
     {{burger_name}}
 <input type="submit" value="eat">
   
     </form>
-  </li>
+    
+ <p>
   {{/unless}}
   {{/each}}
 </ul>
 
 
+
 <ul>
   {{#each results }}
   {{#if devoured}}
-  <li>
+  <p>
 
    {{burger_name}}
 
     
-  </li>
+ <p>
   {{/if}}
   {{/each}}
 </ul>
@@ -49,4 +49,5 @@
   
   <button type="submit">reset</button>
 </form>
+</div>
 

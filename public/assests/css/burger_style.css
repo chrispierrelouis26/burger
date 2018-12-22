@@ -1,0 +1,14 @@
+ body {
+     background-color:orange;
+ }
+
+
+
+
+.container-fluid {
+    padding-top: 50px;
+    background-color: orange;
+    text-align: center;
+    color: red;
+    /* padding-bottom: 600px; */
+}
