@@ -7,6 +7,8 @@
   {{#each results }}
   {{#unless devoured}}
 
+
+
   <li>
     <form action ="/eatburger" method="POST">
     <input type="hidden" name="id" value="{{id}}">
@@ -24,14 +26,22 @@
   {{#each results }}
   {{#if devoured}}
   <li>
-    
-    {{burger_name}}
+
+   {{burger_name}}
 
     
   </li>
   {{/if}}
   {{/each}}
 </ul>
+
+<form action ="/addburger" method="POST">
+<input type= "text" name="burger" class="" />
+<input type="submit"  value="add burger"  />
+</form>
+
+
+
 
 
 
