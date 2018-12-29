@@ -1,9 +1,9 @@
 var mysql = require("mysql");
 var connection = mysql.createConnection({
-  host     : "icopoghru9oezxh8.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
-  user     : "qk5gyvm53tlnwbeb",
-  password :"v3qnpt4bikfvwr33",
-  database : "bpyag72n4ffyvrbt"
+  host     : process.env.MYSQL_HOST,
+  user     : process.env.MYSQL_USER,
+  password : process.env.MYSQL_KEY,
+  database : process.env.MYSQL_DBNAME
 });
  
 connection.connect();

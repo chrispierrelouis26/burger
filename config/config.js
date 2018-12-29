@@ -1,20 +1,20 @@
 module.exports = {
   "development": {
-    "username": "qk5gyvm53tlnwbeb",
-    "password": "v3qnpt4bikfvwr33",
-    "database": "bpyag72n4ffyvrbt",
-    "host": "icopoghru9oezxh8.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    "username": process.env.MYSQL_USER,
+    "password": process.env.MYSQL_KEY,
+    "database": process.env.MYSQL_DBNAME,
+    "host": process.env.MYSQL_HOST,
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
-    "password": "root",
-    "database": "burgers_db",
+    "password": null,
+    "database": "database_test",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "production": {
     "use_env_variable": "JAWSDB_URL",
-    "dialect" : "mysql"
+    "dialect": "mysql"
   }
 }

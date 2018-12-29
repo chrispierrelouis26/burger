@@ -1,6 +1,7 @@
 var db = require("../models");
 var express = require("express");
 var router = express.Router();
+var burger = require("../config/orm");
 
 router.get("/", function(req, res) {
  db.burgers.findAll({}).then(function(data){
